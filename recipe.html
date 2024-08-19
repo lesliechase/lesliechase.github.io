@@ -1,89 +1,58 @@
 <html>
   <head>
     <title>Non-Alcoholic Piña Colada</title>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "Recipe",
-      "name": "Non-Alcoholic Piña Colada",
-      "image": [
-      "https://example.com/photos/1x1/photo.jpg",
-      "https://example.com/photos/4x3/photo.jpg",
-      "https://example.com/photos/16x9/photo.jpg"
-      ],
-      "author": {
-        "@type": "Person",
-        "name": "Mary Stone"
-      },
-      "datePublished": "2024-03-10",
-      "description": "This non-alcoholic pina colada is everyone's favorite!",
-      "recipeCuisine": "American",
-      "prepTime": "PT1M",
-      "cookTime": "PT2M",
-      "totalTime": "PT3M",
-      "keywords": "non-alcoholic",
-      "recipeYield": "4 servings",
-      "recipeCategory": "Drink",
-      "nutrition": {
-        "@type": "NutritionInformation",
-        "calories": "120 calories"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "18"
-      },
-      "recipeIngredient": [
-        "400ml of pineapple juice",
-        "100ml cream of coconut",
-        "ice"
-      ],
-      "recipeInstructions": [
-        {
-          "@type": "HowToStep",
-          "name": "Blend",
-          "text": "Blend 400ml of pineapple juice and 100ml cream of coconut until smooth.",
-          "url": "https://example.com/non-alcoholic-pina-colada#step1",
-          "image": "https://example.com/photos/non-alcoholic-pina-colada/step1.jpg"
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Fill",
-          "text": "Fill a glass with ice.",
-          "url": "https://example.com/non-alcoholic-pina-colada#step2",
-          "image": "https://example.com/photos/non-alcoholic-pina-colada/step2.jpg"
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Pour",
-          "text": "Pour the pineapple juice and coconut mixture over ice.",
-          "url": "https://example.com/non-alcoholic-pina-colada#step3",
-          "image": "https://example.com/photos/non-alcoholic-pina-colada/step3.jpg"
-        }
-      ],
-      "video": {
-        "@type": "VideoObject",
-        "name": "How to Make a Non-Alcoholic Piña Colada",
-        "description": "This is how you make a non-alcoholic piña colada.",
-        "thumbnailUrl": [
-          "https://example.com/photos/1x1/photo.jpg",
-          "https://example.com/photos/4x3/photo.jpg",
-          "https://example.com/photos/16x9/photo.jpg"
-         ],
-        "contentUrl": "https://www.example.com/video123.mp4",
-        "embedUrl": "https://www.example.com/videoplayer?video=123",
-        "uploadDate": "2024-02-05T08:00:00+08:00",
-        "duration": "PT1M33S",
-        "interactionStatistic": {
-          "@type": "InteractionCounter",
-          "interactionType": { "@type": "WatchAction" },
-          "userInteractionCount": 2347
-        },
-        "expires": "2024-02-05T08:00:00+08:00"
-       }
-    }
-    </script>
   </head>
-  <body>
+  <body itemscope itemtype="https://schema.org/Recipe">
+    <h1 itemprop="name">Non-Alcoholic Piña Colada</h1>
+
+    <div>
+      <img src="https://example.com/photos/1x1/photo.jpg" alt="Non-Alcoholic Piña Colada" itemprop="image" />
+    </div>
+
+    <div>
+      <p><strong>Author:</strong> <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Mary Stone</span></span></p>
+      <p><strong>Published:</strong> <time itemprop="datePublished" datetime="2024-03-10">March 10, 2024</time></p>
+      <p itemprop="description">This non-alcoholic piña colada is everyone's favorite!</p>
+    </div>
+
+    <div>
+      <p><strong>Cuisine:</strong> <span itemprop="recipeCuisine">American</span></p>
+      <p><strong>Prep Time:</strong> <time itemprop="prepTime" datetime="PT1M">1 minute</time></p>
+      <p><strong>Cook Time:</strong> <time itemprop="cookTime" datetime="PT2M">2 minutes</time></p>
+      <p><strong>Total Time:</strong> <time itemprop="totalTime" datetime="PT3M">3 minutes</time></p>
+      <p><strong>Servings:</strong> <span itemprop="recipeYield">4 servings</span></p>
+      <p><strong>Category:</strong> <span itemprop="recipeCategory">Drink</span></p>
+      <p><strong>Calories:</strong> <span itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation"><span itemprop="calories">120 calories</span></span></p>
+    </div>
+
+    <h2>Ingredients</h2>
+    <ul>
+      <li itemprop="recipeIngredient">400ml of pineapple juice</li>
+      <li itemprop="recipeIngredient">100ml cream of coconut</li>
+      <li itemprop="recipeIngredient">Ice</li>
+    </ul>
+
+    <h2>Instructions</h2>
+    <ol>
+      <li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep">
+        <span itemprop="name">Blend</span>: <span itemprop="text">Blend 400ml of pineapple juice and 100ml cream of coconut until smooth.</span>
+      </li>
+      <li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep">
+        <span itemprop="name">Fill</span>: <span itemprop="text">Fill a glass with ice.</span>
+      </li>
+      <li itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToStep">
+        <span itemprop="name">Pour</span>: <span itemprop="text">Pour the pineapple juice and coconut mixture over ice.</span>
+      </li>
+    </ol>
+
+    <h2>Video</h2>
+    <div itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+      <h3 itemprop="name">How to Make a Non-Alcoholic Piña Colada</h3>
+      <p itemprop="description">This is how you make a non-alcoholic piña colada.</p>
+      <a href="https://www.example.com/video123.mp4" itemprop="contentUrl">Watch Video</a>
+      <meta itemprop="uploadDate" content="2024-02-05T08:00:00+08:00" />
+      <meta itemprop="duration" content="PT1M33S" />
+      <p><img src="https://example.com/photos/1x1/photo.jpg" alt="Video Thumbnail" itemprop="thumbnailUrl"></p>
+    </div>
   </body>
 </html>
